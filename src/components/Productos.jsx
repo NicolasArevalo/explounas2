@@ -107,11 +107,11 @@ const products = [
 ]
 
 export default function Productos() {
-	const [productsToShow, setProductsToShow] = useState(products.slice(0, 4))
+	const [productsToShow, setProductsToShow] = useState(products.slice(0, 5))
 
 	const handleVerMas = () => {
-		productsToShow.length > 4
-			? setProductsToShow(products.slice(0, 4))
+		productsToShow.length > 5
+			? setProductsToShow(products.slice(0, 5))
 			: setProductsToShow(products)
 	}
 	return (
@@ -156,7 +156,7 @@ export default function Productos() {
 					onClick={handleVerMas}
 				>
 					Ver{' '}
-					{productsToShow.length > 4
+					{productsToShow.length > 5
 						? 'menos'
 						: 'más'
 					}
