@@ -1,24 +1,26 @@
 ---
 import Header from '../components/Header.astro';
 import Navbar from '../components/Navbar';
+import Banner from '../components/Banner.astro';
 import Productos from '../components/Productos';
 import Hero from '../components/Hero.astro';
-import Nosotras from '../components/Nosotras.astro';
+import Nosotras from '../components/Nosotras';
 import Footer from '../components/Footer.astro';
 import WhatsAppFlotante from '../components/WhatsAppFlotante.astro';
 import Layout from '../layouts/Layout.astro';
-import Servicios from '../components/Servicios.astro';
+import Servicios from '../components/Servicios';
 ---
 
 <Layout title="Explouñas | Manicura y pedicura 💅🏻">
-	<main>
+	<!-- <Banner /> -->
+	<Navbar client:load/>
+	<main class="md:mx-8">
 		<!-- header, navbar, hero section, servicios, productos, terminos, las chamitas (con sus certificados), info del local -->
 		<!-- <Header /> -->
-		<Navbar client:load/>
 		<Hero />
-		<Servicios />
+		<Servicios client:load />
 		<Productos client:load />
-		<!-- <Nosotras /> -->
+		<Nosotras />
 		<Footer />
 		<WhatsAppFlotante />
 	</main>

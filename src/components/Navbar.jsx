@@ -6,22 +6,21 @@ const navigation = [
 	{ name: 'Inicio', href: '/' },
 	{ name: 'Servicios', href: '#servicios' },
 	{ name: 'Productos', href: '#productos' },
+	{ name: 'Nosotras', href: '#nosotras' },
 	{ name: 'Términos y condiciones', href: '/terminos' },
-	{ name: 'Más información', href: '#contacto' },
 ]
 
 export default function Example() {
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
-  const explounasClasses = 'font-bold text-2xl'
+	const explounasClasses = 'font-bold text-2xl lg:text-4xl'
 
-  console.log(mobileMenuOpen)
 	return (
-		<div className='px-6 pt-6 lg:px-8 z-20'>
+		<div className='px-6 py-4 lg:px-8 z-20'> {/* fixed inset-x-0 top-0 bg-white/70 */}
 			<nav className='flex items-center justify-between' aria-label='Global'>
 				<div className='flex lg:flex-1'>
 					<a href='#' className='-m-1.5 p-1.5'>
-						<span className={explounasClasses}>Explouñas</span>
+						<span className={explounasClasses} style={{fontFamily: 'xmas'}}>Explouñas</span>
 					</a>
 				</div>
 				<div className='flex lg:hidden'>
@@ -53,7 +52,7 @@ export default function Example() {
 				>
 					<div className='flex items-center justify-between'>
 						<a href='#' className='-m-1.5 p-1.5'>
-							<span className={explounasClasses}>Explouñas</span>
+							<span className={explounasClasses} style={{fontFamily: 'xmas'}}>Explouñas</span>
 						</a>
 						<button
 							type='button'
