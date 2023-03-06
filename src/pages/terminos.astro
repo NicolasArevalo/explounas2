@@ -1,16 +1,51 @@
 ---
-import Navbar from '../components/Navbar';
+import Navbar from '../components/Navbar'
 
-import Footer from '../components/Footer.astro';
-import WhatsAppFlotante from '../components/WhatsAppFlotante.astro';
-import Layout from '../layouts/Layout.astro';
+import Footer from '../components/Footer.astro'
+import WhatsAppFlotante from '../components/WhatsAppFlotante.astro'
+import Layout from '../layouts/Layout.astro'
+
+
+const h2style='font-semibold text-xl mt-10'
+const h3style='font-semibold  mt-10'
 ---
 
-<Layout title="Términos y condiciones de Explouñas | Manicura y pedicura 💅🏻">
-	<Navbar client:load/>
-	<main class="">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum porro consequatur, incidunt harum unde eos maxime numquam. Quam provident, debitis soluta odio tempore vel quae maxime. Quos voluptatem quasi consequuntur?</p>
-		<Footer />
-		<WhatsAppFlotante />
+<Layout title='Términos y condiciones de Explouñas | Manicura y pedicura 💅🏻'>
+	<Navbar client:load />
+	<main class='max-w-[50rem] mx-auto my-16'>
+		<h1 class="text-5xl font-semibold">Términos y condiciones</h1>
+		<!-- <h2 class="text-gray-600 text-2xl ml-1.5">Explouñas</h2> -->
+
+		<h2 class={h2style} >Política de garantía</h2>
+		<p class="mt-2">
+			Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum porro
+			consequatur, incidunt harum unde eos maxime numquam. Quam provident,
+			debitis soluta odio tempore vel quae maxime. Quos voluptatem quasi
+			consequuntur?
+		</p>
+
+		<h3 class={h3style} >Uñas semipermanentes</h3>
+		<p class="mt-2">
+			Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum porro
+			consequatur, incidunt harum unde eos maxime numquam. Quam provident,
+			debitis soluta odio tempore vel quae maxime. Quos voluptatem quasi
+			consequuntur?
+		</p>
+		<h3 class={h3style} >Uñas en extensión</h3>
+		<p class="mt-2">
+			Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum porro
+			consequatur, incidunt harum unde eos maxime numquam. Quam provident,
+			debitis soluta odio tempore vel quae maxime. Quos voluptatem quasi
+			consequuntur?
+		</p>
+		<h3 class={h3style} > Advertencias y precauciones⚠️</h3>
+		<p class="mt-2">
+			Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum porro
+			consequatur, incidunt harum unde eos maxime numquam. Quam provident,
+			debitis soluta odio tempore vel quae maxime. Quos voluptatem quasi
+			consequuntur?
+		</p>
 	</main>
+	<Footer />
+	<WhatsAppFlotante />
 </Layout>

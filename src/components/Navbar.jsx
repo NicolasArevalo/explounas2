@@ -2,12 +2,13 @@ import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
+const root = 'http://localhost:3000/'
 const navigation = [
-	{ name: 'Inicio', href: '/' },
-	{ name: 'Servicios', href: '#servicios' },
-	{ name: 'Productos', href: '#productos' },
-	{ name: 'Nosotras', href: '#nosotras' },
-	{ name: 'Términos y condiciones', href: '/terminos' },
+	{ name: 'Inicio', href: `${root}` },
+	{ name: 'Servicios', href: `${root}#servicios` },
+	{ name: 'Productos', href: `${root}#productos` },
+	{ name: 'Nosotras', href: `${root}#nosotras` },
+	{ name: 'Términos y condiciones', href: `${root}terminos` },
 ]
 
 export default function Example() {
@@ -16,7 +17,7 @@ export default function Example() {
 	const explounasClasses = 'font-bold text-2xl lg:text-4xl'
 
 	return (
-		<div className='px-6 py-4 lg:px-8 z-20'> {/* fixed inset-x-0 top-0 bg-white/70 */}
+		<div className='px-6 py-4 lg:px-8 z-40'> {/* fixed inset-x-0 top-0 bg-white/70 */}
 			<nav className='flex items-center justify-between' aria-label='Global'>
 				<div className='flex lg:flex-1'>
 					<a href='#' className='-m-1.5 p-1.5'>
@@ -48,12 +49,10 @@ export default function Example() {
 			<Dialog as='div' open={mobileMenuOpen} onClose={setMobileMenuOpen}>
 				<Dialog.Panel
 					focus='true'
-					className='fixed inset-0 z-10 overflow-y-auto bg-white px-6 py-6 lg:hidden'
+					className='fixed top-0 right-0 z-10 shadow-lg overflow-y-auto bg-purple-50 px-6 py-6 lg:hidden rounded-lg'
 				>
-					<div className='flex items-center justify-between'>
-						<a href='#' className='-m-1.5 p-1.5'>
-							<span className={explounasClasses} style={{fontFamily: 'xmas'}}>Explouñas</span>
-						</a>
+					<div className='flex items-center justify-between '>
+						<div></div>
 						<button
 							type='button'
 							className='-m-2.5 rounded-md p-2.5 text-gray-700'
@@ -70,7 +69,7 @@ export default function Example() {
 									<a
 										key={item.name}
 										href={item.href}
-										className='-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10'
+										className='-mx-3 text-right block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10'
 									>
 										{item.name}
 									</a>

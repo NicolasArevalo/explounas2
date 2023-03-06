@@ -1,16 +1,18 @@
 import { useState } from 'react'
 
-import producto1 from '@assets/producto1.jpg'
-import producto2 from '@assets/producto2.jpg'
-import producto3 from '@assets/producto3.jpg'
-import producto4 from '@assets/producto4.jpg'
-import producto5 from '@assets/producto5.jpg'
-import producto6 from '@assets/producto6.jpg'
-import producto7 from '@assets/producto7.jpg'
-import producto8 from '@assets/producto8.jpg'
-import producto9 from '@assets/producto9.jpg'
-import producto10 from '@assets/producto10.jpg'
-import producto11 from '@assets/producto11.jpg'
+import producto1 from '@assets/products/producto1.jpg'
+import producto2 from '@assets/products/producto2.jpg'
+import producto3 from '@assets/products/producto3.jpg'
+import producto4 from '@assets/products/producto4.jpg'
+import producto5 from '@assets/products/producto5.jpg'
+import producto6 from '@assets/products/producto6.jpg'
+import producto7 from '@assets/products/producto7.jpg'
+import producto8 from '@assets/products/producto8.jpg'
+import producto9 from '@assets/products/producto9.jpg'
+import producto10 from '@assets/products/producto10.jpg'
+import producto11 from '@assets/products/producto11.jpg'
+import producto12 from '@assets/products/producto12.jpg'
+import producto13 from '@assets/products/producto13.jpg'
 
 const products = [
 	{
@@ -104,6 +106,22 @@ const products = [
 		price: '$2.000',
 		tag: 'Estética',
 	},
+	{
+		id: 12,
+		name: 'Base regeneradora',
+		href: 'https://wa.me/573178062298?text=¡Hola%20Explounas!%20Quiero%20comprar%20una%20base%20regeneradora. 🧃',
+		imageSrc: producto12,
+		price: '$2.000',
+		tag: 'Salud',
+	},
+	{
+		id: 13,
+		name: 'Base recuperadora',
+		href: 'https://wa.me/573178062298?text=¡Hola%20Explounas!%20Quiero%20comprar%20una%20base%20recuperadora. 🧃',
+		imageSrc: producto13,
+		price: '$2.000',
+		tag: 'Salud',
+	},
 ]
 
 export default function Productos() {
@@ -115,7 +133,7 @@ export default function Productos() {
 			: setProductsToShow(products)
 	}
 	return (
-		<section id='productos' className='mb-16'>
+		<section id='productos' className='mb-16 animate__animated animate__fadeInTopLeft'>
 			<div className='flex flex-col mx-auto max-w-2xl  px-4 lg:max-w-7xl '>
 				<h2 className='text-3xl font-bold text-center text-gray-800 mb-8'>
 					Nuestros productos
