@@ -156,17 +156,17 @@ export default function Servicios() {
 						<a
 							href='#'
 							key={service.id}
-							className='w-full h-[165px] mx-auto lg:mx-0 flex max-w-sm bg-white border border-gray-200 rounded-lg shadow-lg min-w-[280px] md:min-w-[360px]'
+							className='w-full h-[165px] mx-auto lg:mx-0 flex max-w-sm bg-white border border-gray-200 rounded-lg shadow-lg transition duration-200 hover:shadow-xl min-w-[280px] md:min-w-[360px]'
 						>
-							<a href='#'>
+							<div>
 								<img
 									className='rounded-tl rounded-bl h-full w-[120px] object-cover'
 									src={service.imageSrc}
 									alt='product image'
 								/>
-							</a>
+							</div>
 							<div className='pl-5 pr-1 pt-2.5 pb-3 flex flex-col justify-between w-2/3'>
-								<a href='#'>
+								<div>
 									<h5 className='text-xl font-semibold tracking-tight text-gray-900'>
 										{service.name}
 									</h5>
@@ -181,7 +181,7 @@ export default function Servicios() {
 											{tag}
 										</span>
 									))}
-								</a>
+								</div>
 
 								<div className='flex justify-end'>
 									<span className='text-xl text-gray-700'>{service.price}</span>

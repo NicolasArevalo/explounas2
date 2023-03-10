@@ -17,7 +17,7 @@ export default function Example() {
 	const explounasClasses = 'font-bold text-2xl lg:text-4xl'
 
 	return (
-		<div className='px-6 py-4 lg:px-8 z-40'> {/* fixed inset-x-0 top-0 bg-white/70 */}
+		<div className='relative px-6 py-4 lg:px-8 z-40'> {/* fixed inset-x-0 top-0 bg-white/70 */}
 			<nav className='flex items-center justify-between' aria-label='Global'>
 				<div className='flex lg:flex-1'>
 					<a href='#' className='-m-1.5 p-1.5'>
@@ -34,12 +34,12 @@ export default function Example() {
 						<Bars3Icon className='h-6 w-6' aria-hidden='true' />
 					</button>
 				</div>
-				<div className='hidden lg:flex lg:gap-x-12'>
+				<div className='hidden lg:flex lg:gap-x-8'>
 					{navigation.map(item => (
 						<a
 							key={item.name}
 							href={item.href}
-							className='text-sm font-semibold leading-6 text-gray-900'
+							className='text-sm font-semibold leading-6 text-gray-900 py-1 px-2 rounded transition duration-200 hover:bg-purple-200'
 						>
 							{item.name}
 						</a>
@@ -49,7 +49,7 @@ export default function Example() {
 			<Dialog as='div' open={mobileMenuOpen} onClose={setMobileMenuOpen}>
 				<Dialog.Panel
 					focus='true'
-					className='fixed top-0 right-0 z-10 shadow-lg overflow-y-auto bg-purple-50 px-6 py-6 lg:hidden rounded-lg'
+					className='fixed top-0 right-0 z-50 shadow-lg overflow-y-auto bg-purple-50 px-6 py-6 lg:hidden rounded-lg'
 				>
 					<div className='flex items-center justify-between '>
 						<div></div>

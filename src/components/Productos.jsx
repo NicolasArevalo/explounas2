@@ -111,7 +111,7 @@ const products = [
 		name: 'Base regeneradora',
 		href: 'https://wa.me/573178062298?text=¡Hola%20Explounas!%20Quiero%20comprar%20una%20base%20regeneradora. 🧃',
 		imageSrc: producto12,
-		price: '$2.000',
+		price: '$14.000',
 		tag: 'Salud',
 	},
 	{
@@ -119,7 +119,7 @@ const products = [
 		name: 'Base recuperadora',
 		href: 'https://wa.me/573178062298?text=¡Hola%20Explounas!%20Quiero%20comprar%20una%20base%20recuperadora. 🧃',
 		imageSrc: producto13,
-		price: '$2.000',
+		price: '$14.000',
 		tag: 'Salud',
 	},
 ]
@@ -133,7 +133,7 @@ export default function Productos() {
 			: setProductsToShow(products)
 	}
 	return (
-		<section id='productos' className='mb-16 animate__animated animate__fadeInTopLeft'>
+		<section id='productos' className='mb-16'>
 			<div className='flex flex-col mx-auto max-w-2xl  px-4 lg:max-w-7xl '>
 				<h2 className='text-3xl font-bold text-center text-gray-800 mb-8'>
 					Nuestros productos
@@ -143,7 +143,7 @@ export default function Productos() {
 					{productsToShow.map(product => {
 						return (
 							<div key={product.id} className='group relative'>
-								<div className='min-h-80 aspect-w-1  w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 transition-opacity duration-200 lg:aspect-none lg:h-85'>
+								<div className='min-h-80 aspect-w-1  w-full overflow-hidden rounded-md group-hover:opacity-75 transition-opacity duration-200 lg:aspect-none lg:h-85'>
 									<img
 										src={product.imageSrc}
 										alt={product.name}
