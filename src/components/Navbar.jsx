@@ -39,7 +39,7 @@ export default function Example() {
 						<a
 							key={item.name}
 							href={item.href}
-							className='text-sm font-semibold leading-6 text-gray-900 py-1 px-2 rounded transition duration-200 hover:bg-purple-200'
+							className='text-sm font-semibold leading-6 text-gray-900 py-1 px-2 rounded transition duration-200 hover:bg-purple-100'
 						>
 							{item.name}
 						</a>
@@ -49,7 +49,7 @@ export default function Example() {
 			<Dialog as='div' open={mobileMenuOpen} onClose={setMobileMenuOpen}>
 				<Dialog.Panel
 					focus='true'
-					className='fixed top-0 right-0 z-50 shadow-lg overflow-y-auto bg-purple-50 px-6 py-6 lg:hidden rounded-lg'
+					className='fixed top-0 right-0 z-50 shadow-lg overflow-y-auto bg-white px-6 py-6 lg:hidden rounded-lg'
 				>
 					<div className='flex items-center justify-between '>
 						<div></div>

@@ -3,6 +3,7 @@ const links = {
     facebook: 'https://www.facebook.com/cata.vizcaya',
     instagram: 'https://www.instagram.com/explounas/',
     tiktok: 'https://www.tiktok.com/@explounas',
+    maps: 'https://goo.gl/maps/XPPA3ejPtuwezwym8'
 }
 
 export default links

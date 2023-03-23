@@ -13,11 +13,13 @@ import retoqueAcrilicas from '@assets/sinfondo1.jpeg'
 
 import links from '@assets/links'
 import { useState } from 'react'
+
+const wappBaseLink = 'https://wa.me/573178062298?text=¡Hola%20Explouñas!%20'
 const services = [
 	{
 		id: 1,
 		name: 'Tradicionales',
-		href: '#',
+		href: `${wappBaseLink}Quiero%20agendar%20un%20servicio%20de%20uñas%20tradicionales.`,
 		imageSrc: tradicionales,
 		time: '1h',
 		tags: ['Manos', 'Pies'],
@@ -27,7 +29,7 @@ const services = [
 	{
 		id: 2,
 		name: 'Semipermantentes',
-		href: '#',
+		href: `${wappBaseLink}Quiero%20agendar%20un%20servicio%20de%20uñas%20semipermanentes.`,
 		time: '2h',
 		imageSrc: semipermanente,
 		tags: ['Manos', 'Pies'],
@@ -37,7 +39,7 @@ const services = [
 	{
 		id: 3,
 		name: 'Acrílicas',
-		href: '#',
+		href: `${wappBaseLink}Quiero%20agendar%20un%20servicio%20de%20uñas%20acrílicas.`,
 		imageSrc: acrilicas,
 		time: '4h',
 		tags: ['Manos'],
@@ -47,7 +49,7 @@ const services = [
 	{
 		id: 4,
 		name: 'Manicura Rusa',
-		href: '#',
+		href: `${wappBaseLink}Quiero%20agendar%20un%20servicio%20de%20manicura%20rusa.`,
 		time: '1h',
 		imageSrc: rusa,
 		tags: ['Manos', 'Pies'],
@@ -57,7 +59,7 @@ const services = [
 	{
 		id: 5,
 		name: 'Semipermanente con baño en acrílico',
-		href: '#',
+		href: `${wappBaseLink}Quiero%20agendar%20un%20servicio%20de%20uñas%20semipermanentes%20con%20baño%20en%20acrílico.`,
 		time: '2h',
 		imageSrc: banoAcrilico,
 		tags: ['Manos', 'Pies'],
@@ -67,7 +69,7 @@ const services = [
 	{
 		id: 6,
 		name: 'Retoque de Acrílicas',
-		href: '#',
+		href: `${wappBaseLink}Quiero%20agendar%20un%20servicio%20de%20retoque%20de%20uñas%20acrílicas.`,
 		time: '3h',
 		imageSrc: retoqueAcrilicas,
 		tags: ['Manos'],
@@ -77,7 +79,7 @@ const services = [
 	{
 		id: 7,
 		name: 'Press on',
-		href: '#',
+		href: `${wappBaseLink}Quiero%20agendar%20un%20servicio%20de%20uñas%20Press%20on.`,
 		time: '2.5h',
 		imageSrc: presion,
 		tags: ['Manos'],
@@ -87,7 +89,7 @@ const services = [
 	{
 		id: 8,
 		name: 'Retiro de semipermanentes',
-		href: '#',
+		href: `${wappBaseLink}Quiero%20agendar%20un%20servicio%20de%20retiro%20de%20uñas%20semipermanentes.`,
 		imageSrc: retiroSemi,
 		tags: ['Manos', 'Pies'],
 		price: '$10.000',
@@ -96,7 +98,7 @@ const services = [
 	{
 		id: 9,
 		name: 'Retiro de semipermanentes con baño en acrílico',
-		href: '#',
+		href: `${wappBaseLink}Quiero%20agendar%20un%20servicio%20de%20retiro%20de%20uñas%20semipermanentes%20con%20baño%20en%20acrílico.`,
 		imageSrc: retiroBanoAcrilico,
 		tags: ['Manos', 'Pies'],
 		price: '$15.000',
@@ -105,7 +107,7 @@ const services = [
 	{
 		id: 10,
 		name: 'Retiro de acrílicas',
-		href: '#',
+		href: `${wappBaseLink}Quiero%20agendar%20un%20servicio%20de%20retiro%20de%20acrílicas.`,
 		time: '1.5h',
 		imageSrc: retiroAcrilicas,
 		tags: ['Manos'],
@@ -115,7 +117,7 @@ const services = [
 	{
 		id: 11,
 		name: 'Pedispa + tradicional',
-		href: '#',
+		href: `${wappBaseLink}Quiero%20agendar%20un%20servicio%20de%20Pedispa%20+%20tradicional.`,
 		time: '1.5h',
 		imageSrc: pedicureTradicionalSpa,
 		tags: ['Pies'],
@@ -125,7 +127,7 @@ const services = [
 	{
 		id: 12,
 		name: 'Pedispa + semipermanente',
-		href: '#',
+		href: `${wappBaseLink}Quiero%20agendar%20un%20servicio%20de%20Pedispa%20+%20semipermanentes.`,
 		time: '2h',
 		imageSrc: pedicureSemi,
 		tags: ['Pies'],
@@ -136,7 +138,7 @@ const services = [
 
 export default function Servicios() {
 	const [servicesToShow, setServicesToShow] = useState(services.slice(0, 6))
-
+	
 	const handleVerMas = () => {
 		servicesToShow.length > 6
 			? setServicesToShow(services.slice(0, 6))
@@ -154,7 +156,7 @@ export default function Servicios() {
 				>
 					{servicesToShow.map(service => (
 						<a
-							href='#'
+							href={service.href}
 							key={service.id}
 							className='w-full h-[165px] mx-auto lg:mx-0 flex max-w-sm bg-white border border-gray-200 rounded-lg shadow-lg transition duration-200 hover:shadow-xl min-w-[280px] md:min-w-[360px]'
 						>
@@ -191,7 +193,7 @@ export default function Servicios() {
 					))}
 				</div>
 				<button
-					className='self-center mx-auto w-full md:w-1/2 lg:w-1/4 my-8 text-xl border border-purple-700 p-3 rounded-md'
+					className='self-center mx-auto w-full md:w-1/2 lg:w-1/4 my-8 text-xl border transition-filter duration-300 border-purple-700 bg-white p-3 rounded-md'
 					onClick={handleVerMas}
 				>
 					Ver {servicesToShow.length > 6 ? 'menos' : 'más'}

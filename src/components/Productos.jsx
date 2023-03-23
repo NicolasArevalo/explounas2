@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import './commonstyles.css'
 
 import producto1 from '@assets/products/producto1.jpg'
 import producto2 from '@assets/products/producto2.jpg'
@@ -170,14 +171,10 @@ export default function Productos() {
 				</div>
 
 				<button
-					className='self-center mx-auto w-full md:w-1/2 lg:w-1/4 my-8 text-xl border border-purple-700 p-3 rounded-md'
+					className='btn-vermas self-center mx-auto w-full md:w-1/2 lg:w-1/4 my-8 text-xl border transition-filter duration-300 border-purple-700 bg-white p-3 rounded-md '
 					onClick={handleVerMas}
 				>
-					Ver{' '}
-					{productsToShow.length > 5
-						? 'menos'
-						: 'más'
-					}
+					Ver {productsToShow.length > 5 ? 'menos' : 'más'}
 				</button>
 			</div>
 		</section>

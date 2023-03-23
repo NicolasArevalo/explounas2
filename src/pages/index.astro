@@ -1,20 +1,20 @@
 ---
-import Header from '../components/Header.astro';
-import Navbar from '../components/Navbar';
-import Banner from '../components/Banner.astro';
-import Productos from '../components/Productos';
-import Hero from '../components/Hero.astro';
-import Nosotras from '../components/Nosotras';
-import Footer from '../components/Footer.astro';
-import WhatsAppFlotante from '../components/WhatsAppFlotante.astro';
-import Layout from '../layouts/Layout.astro';
-import Servicios from '../components/Servicios';
+import Header from '../components/Header.astro'
+import Navbar from '../components/Navbar'
+import Banner from '../components/Banner.astro'
+import Productos from '../components/Productos'
+import Hero from '../components/Hero.astro'
+import Nosotras from '../components/Nosotras'
+import Footer from '../components/Footer.astro'
+import WhatsAppFlotante from '../components/WhatsAppFlotante.astro'
+import Layout from '../layouts/Layout.astro'
+import Servicios from '../components/Servicios'
 ---
 
-<Layout title="Explouñas | Manicura y pedicura 💅🏻">
+<Layout title='Explouñas | Manicura y pedicura 💅🏻'>
 	<!-- <Banner /> -->
-	<Navbar client:load/>
-	<main class="md:mx-8">
+	<Navbar client:load />
+	<main class='md:mx-8'>
 		<Hero />
 		<Servicios client:visible />
 		<Productos client:visible />
@@ -23,3 +23,4 @@ import Servicios from '../components/Servicios';
 		<WhatsAppFlotante />
 	</main>
 </Layout>
+

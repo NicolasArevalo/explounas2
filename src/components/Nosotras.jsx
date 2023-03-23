@@ -21,7 +21,7 @@ const persons = [
 		color: 'Black',
 		order: 'order-[-1]',
 	},
-	{
+/* 	{
 		id: 2,
 		name: 'Marce',
 		position: 'Manicurista',
@@ -29,7 +29,7 @@ const persons = [
 		imageAlt: "Front of men's Basic Tee in black.",
 		price: '$12.000',
 		color: 'Black',
-	},
+	}, */
 ]
 export default function Nosotras() {
 	return (
@@ -40,13 +40,13 @@ export default function Nosotras() {
 				{persons.map(person => (
 					<div class={person?.order + ' md:order-unset p-4'}>
 						<div class='mb-4 text-center opacity-90'>
-							<a href='#' class='relative block'>
+							<div class='relative block'>
 								<img
 									alt={person.name}
 									src={person.imageSrc}
-									class='mx-auto object-cover rounded-full h-28 w-28 md:h-40 md:w-40 lg:h-64  lg:w-64'
+									class='mx-auto object-cover rounded-full h-36 w-36 md:h-40 md:w-40 lg:h-64  lg:w-64'
 								/>
-							</a>
+							</div>
 						</div>
 						<div class='text-center'>
 							<p class='text-2xl text-gray-800'>{person.name}</p>
