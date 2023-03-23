@@ -7,7 +7,7 @@ const persons = [
 		name: 'Lala',
 		position: 'Manicurista',
 		imageSrc: lala,
-		imageAlt: "Front of men's Basic Tee in black.",
+		imageAlt: "Laura manicurista",
 		price: '$12.000',
 		color: 'Black',
 	},
