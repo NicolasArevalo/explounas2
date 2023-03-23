@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
-const root = 'http://localhost:3000/'
+const root = 'http://explounas.com/'
 const navigation = [
 	{ name: 'Inicio', href: `${root}` },
 	{ name: 'Servicios', href: `${root}#servicios` },

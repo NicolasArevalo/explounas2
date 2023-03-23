@@ -54,7 +54,7 @@ const products = [
 		name: 'Lima',
 		href: 'https://wa.me/573178062298?text=¡Hola%20Explounas!%20Quiero%20comprar%20una%20lima. 🤠',
 		imageSrc: producto3,
-		price: '$1.000',
+		price: '$2.000',
 		tag: 'Estética',
 	},
 	{
@@ -171,7 +171,7 @@ export default function Productos() {
 				</div>
 
 				<button
-					className='btn-vermas self-center mx-auto w-full md:w-1/2 lg:w-1/4 my-8 text-xl border transition-filter duration-300 border-purple-700 bg-white p-3 rounded-md '
+					className='btn-vermas self-center mx-auto w-full md:w-1/2 lg:w-1/4 my-8 text-xl border transition-filter duration-200 border-purple-700 bg-white p-3 rounded-md '
 					onClick={handleVerMas}
 				>
 					Ver {productsToShow.length > 5 ? 'menos' : 'más'}
