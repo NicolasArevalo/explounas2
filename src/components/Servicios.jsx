@@ -15,16 +15,18 @@ import links from '@assets/links'
 import { useState } from 'react'
 
 const baseCloudinary = 'https://res.cloudinary.com/dkssc919j/image/upload/v1680040347/explounas/'
+const baseCloudinaryNueva = 'https://res.cloudinary.com/dkssc919j/image/upload/v1726586532/explounas/'
+
 const wappBaseLink = 'https://wa.me/573178062298?text=¡Hola%20Explouñas!%20'
 const services = [
 	{
 		id: 1,
 		name: 'Tradicionales',
 		href: `${wappBaseLink}Quiero%20agendar%20un%20servicio%20de%20uñas%20tradicionales.`,
-		imageSrc: 'https://res.cloudinary.com/dkssc919j/image/upload/v1680040344/explounas/tradicionales_rcyb9s.webp',
+		imageSrc: `${baseCloudinary}Servicios/manicureTradi.jpg`,
 		time: '1h',
 		tags: ['Manos', 'Pies'],
-		price: '$16.000',
+		price: '$18.000',
 		color: 'Black',
 	},
 	{
@@ -32,9 +34,9 @@ const services = [
 		name: 'Semipermantentes',
 		href: `${wappBaseLink}Quiero%20agendar%20un%20servicio%20de%20uñas%20semipermanentes.`,
 		time: '2h',
-		imageSrc: 'https://res.cloudinary.com/dkssc919j/image/upload/v1680040350/explounas/semipermanente_fr6oom.webp',
+		imageSrc: `${baseCloudinaryNueva}Servicios/semipermanente.jpg`,
 		tags: ['Manos', 'Pies'],
-		price: '$45.000',
+		price: '$50.000',
 		color: 'Black',
 	},
 	{
@@ -44,7 +46,7 @@ const services = [
 		imageSrc: `${baseCloudinary}acrilicas_pld9ah.webp`,
 		time: '4h',
 		tags: ['Manos'],
-		price: '$100.000',
+		price: '$112.000',
 		color: 'Black',
 	},
 	{
@@ -54,7 +56,7 @@ const services = [
 		time: '1h',
 		imageSrc: 'https://res.cloudinary.com/dkssc919j/image/upload/v1680040348/explounas/rusa_skg5ew.webp',
 		tags: ['Manos', 'Pies'],
-		price: '$16.000',
+		price: '$18.000',
 		color: 'Black',
 	},
 	{
@@ -62,29 +64,29 @@ const services = [
 		name: 'Semipermanente con baño en acrílico',
 		href: `${wappBaseLink}Quiero%20agendar%20un%20servicio%20de%20uñas%20semipermanentes%20con%20baño%20en%20acrílico.`,
 		time: '2h',
-		imageSrc: 'https://res.cloudinary.com/dkssc919j/image/upload/v1680040347/explounas/banoAcrilico_sbvvmj.webp',
+		imageSrc: `${baseCloudinaryNueva}Servicios/semiBanoAcrilico.jpg`,
 		tags: ['Manos', 'Pies'],
-		price: '$55.000',
+		price: '$60.000',
 		color: 'Black',
 	},
 	{
 		id: 6,
-		name: 'Retoque de Acrílicas',
+		name: 'Soft gel',
 		href: `${wappBaseLink}Quiero%20agendar%20un%20servicio%20de%20retoque%20de%20uñas%20acrílicas.`,
 		time: '3h',
 		imageSrc: 'https://res.cloudinary.com/dkssc919j/image/upload/v1680040345/explounas/sinfondo1_t7etfb.webp',
 		tags: ['Manos'],
-		price: '$70.000',
+		price: '$85.000',
 		color: 'Black',
 	},
 	{
 		id: 7,
-		name: 'Press on',
+		name: 'Semipermanente hombre',
 		href: `${wappBaseLink}Quiero%20agendar%20un%20servicio%20de%20uñas%20Press%20on.`,
 		time: '2.5h',
 		imageSrc: 'https://res.cloudinary.com/dkssc919j/image/upload/v1680040344/explounas/presion_zu4tch.webp',
 		tags: ['Manos'],
-		price: '$75.000',
+		price: '$34.000',
 		color: 'Black',
 	},
 	{
@@ -98,16 +100,16 @@ const services = [
 	},
 	{
 		id: 9,
-		name: 'Retiro de semipermanentes con baño en acrílico',
+		name: 'Tradicional niñ@s',
 		href: `${wappBaseLink}Quiero%20agendar%20un%20servicio%20de%20retiro%20de%20uñas%20semipermanentes%20con%20baño%20en%20acrílico.`,
 		imageSrc: 'https://res.cloudinary.com/dkssc919j/image/upload/v1680040347/explounas/retiroBanoAcrilico_bscuma.webp',
 		tags: ['Manos', 'Pies'],
-		price: '$15.000',
+		price: '$11.000',
 		color: 'Black',
 	},
 	{
 		id: 10,
-		name: 'Retiro de acrílicas',
+		name: 'Retiro de uñas artificiales',
 		href: `${wappBaseLink}Quiero%20agendar%20un%20servicio%20de%20retiro%20de%20acrílicas.`,
 		time: '1.5h',
 		imageSrc: `${baseCloudinary}retiroAcrilicas_kqy89b.webp`,
@@ -120,9 +122,9 @@ const services = [
 		name: 'Pedispa + tradicional',
 		href: `${wappBaseLink}Quiero%20agendar%20un%20servicio%20de%20Pedispa%20+%20tradicional.`,
 		time: '1.5h',
-		imageSrc: `${baseCloudinary}pedicureTradicionalSpa_uaig4g.webp`,
+		imageSrc: `${baseCloudinaryNueva}Servicios/pedicureTRadi.jpg`,
 		tags: ['Pies'],
-		price: '$25.000',
+		price: '$30.000',
 		color: 'Black',
 	},
 	{
@@ -130,9 +132,9 @@ const services = [
 		name: 'Pedispa + semipermanente',
 		href: `${wappBaseLink}Quiero%20agendar%20un%20servicio%20de%20Pedispa%20+%20semipermanentes.`,
 		time: '2h',
-		imageSrc: `${baseCloudinary}pedicureSemi_g2ynnc.webp`,
+		imageSrc: `${baseCloudinaryNueva}Servicios/pedicureSemi.jpg`,
 		tags: ['Pies'],
-		price: '$55	.000',
+		price: '$60.000',
 		color: 'Black',
 	},
 ]
