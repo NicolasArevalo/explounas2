@@ -100,7 +100,7 @@ const services = [
 	},
 	{
 		id: 9,
-		name: 'Tradicional niñ@s',
+		name: 'Tradicional nenes',
 		href: `${wappBaseLink}Quiero%20agendar%20un%20servicio%20de%20retiro%20de%20uñas%20semipermanentes%20con%20baño%20en%20acrílico.`,
 		imageSrc: 'https://res.cloudinary.com/dkssc919j/image/upload/v1680040347/explounas/retiroBanoAcrilico_bscuma.webp',
 		tags: ['Manos', 'Pies'],
