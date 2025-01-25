@@ -31,7 +31,7 @@ const services = [
 	},
 	{
 		id: 2,
-		name: 'Semipermantentes',
+		name: 'Semipermanente',
 		href: `${wappBaseLink}Quiero%20agendar%20un%20servicio%20de%20uñas%20semipermanentes.`,
 		time: '2h',
 		imageSrc: `${baseCloudinaryNueva}Servicios/semipermanente.jpg`,
