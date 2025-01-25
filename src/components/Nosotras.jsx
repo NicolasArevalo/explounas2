@@ -2,7 +2,7 @@ import cata from '@assets/cata.jpg'
 import lala from '@assets/Lala.jpg'
 import marce from '@assets/Marce.jpg'
 const persons = [
-	{
+/* 	{
 		id: 1,
 		name: 'Lala',
 		position: 'Manicurista',
@@ -10,26 +10,36 @@ const persons = [
 		imageAlt: "Laura manicurista",
 		price: '$12.000',
 		color: 'Black',
-	},
+	}, */
 	{
 		id: 3,
 		name: 'Cata',
 		position: 'Fundadora / manicurista',
-		imageSrc: 'https://res.cloudinary.com/dkssc919j/image/upload/v1680040349/explounas/cata_vkqz3m.webp',
-		imageAlt: "Front of men's Basic Tee in black.",
-		price: '$12.000',
-		color: 'Black',
+		imageSrc: 'https://res.cloudinary.com/dkssc919j/image/upload/v1737848419/explounas/Cata_pggs9f.jpg',
+		imageAlt: "Imagen de Cata la dueña",
 		order: 'order-[-1]',
 	},
-/* 	{
+	{
 		id: 2,
-		name: 'Marce',
+		name: 'Angela',
 		position: 'Manicurista',
-		imageSrc: marce,
-		imageAlt: "Front of men's Basic Tee in black.",
-		price: '$12.000',
-		color: 'Black',
-	}, */
+		imageSrc: 'https://res.cloudinary.com/dkssc919j/image/upload/v1737848419/explounas/Angela_yhvarj.jpg',
+		imageAlt: "Imagen de Angela la manicurista",
+	},
+	{
+		id: 4,
+		name: 'Valen',
+		position: 'Manicurista',
+		imageSrc: 'https://res.cloudinary.com/dkssc919j/image/upload/v1737848420/explounas/Valen_u6yfhs.jpg',
+		imageAlt: "Imagen de Valen la manicurista",
+	},
+	{
+		id: 5,
+		name: 'Lina',
+		position: 'Manicurista',
+		imageSrc: 'https://res.cloudinary.com/dkssc919j/image/upload/v1737848419/explounas/Lina_zn2omf.jpg',
+		imageAlt: "Imagen de Lina la manicurista",
+	},
 ]
 export default function Nosotras() {
 	return (
@@ -44,7 +54,7 @@ export default function Nosotras() {
 								<img
 									alt={person.name}
 									src={person.imageSrc}
-									class='mx-auto object-cover rounded-full h-36 w-36 md:h-40 md:w-40 lg:h-64  lg:w-64'
+									class='mx-auto object-cover rounded-full h-40 w-40 lg:h-64  lg:w-64'
 								/>
 							</div>
 						</div>
