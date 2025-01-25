@@ -144,7 +144,7 @@ const services = [
 		time: '2.5h',
 		imageSrc: 'https://res.cloudinary.com/dkssc919j/image/upload/v1737384087/explounas/Servicios/pediSemi.jpg',
 		tags: ['Pies'],
-		price: '$60.000',
+		price: '$50.000',
 		color: 'Black',
 	},
 ]
